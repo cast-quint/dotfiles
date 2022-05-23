@@ -1,0 +1,9 @@
+# Create a pwn script from a template and automate some tasks
+
+template_file="$XDG_CONFIG_HOME/nvim/templates/exploit.py.template"
+target=$(find -maxdepth 1 -executable -type f -printf '%P\n')
+target_placeholder={{TARGET}}
+
+cp $template_file exploit.py
+sed -i "s/$target_placeholder/$target/g" exploit.py
+$EDITOR exploit.py

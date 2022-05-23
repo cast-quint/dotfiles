@@ -1,0 +1,5 @@
+[user]
+	name = Cast
+	email = koropoulis.dim@protonmail.com
+[init]
+	defaultBranch = main

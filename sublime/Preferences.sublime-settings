@@ -1,0 +1,20 @@
+{
+	"theme": "Adaptive.sublime-theme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	"font_face": "FiraCode Nerd Font Mono",
+	"font_size": 16,
+	"font_options": ["no_liga", "no_clig", "no_calt"],
+//	"ignored_packages": [
+//	],
+//	"vintage_start_in_command_mode": true,
+//	"vintage_use_clipboard": true,
+//	"relative_line_numbers": true,
+	"added_words":
+	[
+		"probs",
+		"Dimitrios",
+		"Koropoulis",
+		"msglang",
+	],
+	"ignored_packages": [],
+}

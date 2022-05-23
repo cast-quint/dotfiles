@@ -1,0 +1,48 @@
+
+## OPTIONS ##################
+
+unsetopt BEEP
+setopt   PROMPT_SUBST
+
+## FUNCTIONS ##################
+
+# add my function folder to fpath
+fpath+=$ZDOTDIR/functions
+
+# autoload the functions
+autoload -Uz $(ls $ZDOTDIR/functions)
+
+## MISC ##################
+
+# enable colors for ls, etc.
+eval $(dircolors)
+
+## SOURCING ##################
+
+# load my aliases
+source $ZDOTDIR/aliases
+
+# load the completion system
+source $ZDOTDIR/completion.zsh
+
+# load the gitstatus plugin
+source $ZDOTDIR/plugins/gitstatus/gitstatus.prompt.zsh
+
+# load zoxide
+eval "$(zoxide init zsh --cmd cd)"
+
+## BINDINGS ##
+
+bindkey -e
+
+## PROMPT ##################
+
+# sets up the working dir prompt
+working_dir="%B%F{blue}[%3~]%f%b"
+
+# sets up the color coded prompt symbol ($)
+prompt_symbol="%(?.%F{green}.%F{red})%B$%f%b"
+
+# all together now
+PROMPT='${working_dir} %B${GITSTATUS_PROMPT}%b ${prompt_symbol} '
+

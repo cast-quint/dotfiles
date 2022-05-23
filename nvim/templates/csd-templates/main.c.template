@@ -1,0 +1,16 @@
+/*
+ * {{NAME}}
+ * {{EMAIL}}
+ * CS{{XXX}} - Spring 2022
+ * Assignment {{A}}
+ * {{FILEE}}
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char** argv) {
+
+    return 0;
+}
+

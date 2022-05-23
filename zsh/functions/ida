@@ -1,0 +1,3 @@
+# open the specified file using ida64, quietly
+
+(&>/dev/null ida64 $arg &)

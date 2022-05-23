@@ -1,0 +1,5 @@
+#ifndef {{MACRO_GUARD}}
+#define {{MACRO_GUARD}}
+
+
+#endif /* {{MACRO_GUARD}} */

@@ -1,0 +1,3 @@
+# open the specified file using the appropriate program based on the xdg standard
+
+(&>/dev/null xdg-open $1 &)

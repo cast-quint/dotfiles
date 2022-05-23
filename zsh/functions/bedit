@@ -1,0 +1,8 @@
+# quickly edit ./.gdbinit or - if it doesn't exist - $XDG_CONFIG_HOME/gdb/gdbinit
+
+if [ -f ./.gdbinit ]; then
+    $EDITOR ./.gdbinit
+else
+    $EDITOR $XDG_CONFIG_HOME/gdb/gdbinit
+fi
+

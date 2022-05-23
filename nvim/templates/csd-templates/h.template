@@ -1,0 +1,14 @@
+/*
+ * {{NAME}}
+ * {{EMAIL}}
+ * CS{{XXX}} - Spring 2022
+ * Assignment {{A}}
+ * {{FILEE}}
+ */
+
+#ifndef {{MACRO_GUARD}}
+#define {{MACRO_GUARD}}
+
+
+#endif /* {{MACRO_GUARD}} */
+

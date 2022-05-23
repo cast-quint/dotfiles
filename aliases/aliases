@@ -1,0 +1,62 @@
+
+# CSD
+alias frapa="ssh csd3967@frapa.csd.uoc.gr"
+alias thanatos="ssh csd3967@thanatos.csd.uoc.gr"
+alias pro="open ~/CSD/misc/timetable.pdf"
+
+# utils
+alias ls='exa -b --sort Name --time-style=iso --group-directories-first'
+alias man=batman
+alias p=python
+
+# edits
+alias -g vim=nvim
+alias aledit="$EDITOR $ZDOTDIR/aliases && source $ZDOTDIR/aliases"
+alias envedit="$EDITOR $DOTDIR/zsh/zshenv && source $DOTDIR/zsh/zshenv"
+alias zedit="$EDITOR $ZDOTDIR/.zshrc && source $ZDOTDIR/.zshrc"
+alias zcedit="$EDITOR $ZDOTDIR/completion.zsh && source $ZDOTDIR/.zshrc"
+alias zfedit="$EDITOR $ZDOTDIR/functions"
+alias vedit="$EDITOR $XDG_CONFIG_HOME/nvim/init.vim"
+alias kedit="$EDITOR $XDG_CONFIG_HOME/kitty/kitty.conf"
+alias dedit="$EDITOR $DOTDIR/dotman.sh"
+alias tedit="$EDITOR $XDG_CONFIG_HOME/nvim/templates"
+alias sedit="$EDITOR ~/.ssh/config"
+alias gedit="$EDITOR $XDG_CONFIG_HOME/gdb/gdbinit"
+alias fedit="nnn $ZDOTDIR/functions"
+
+# FS Traversing
+alias -g  n="nnn -He"
+alias co="cd $XDG_CONFIG_HOME"
+alias ca="cd $XDG_CACHE_HOME"
+alias da="cd $XDG_DATA_HOME"
+alias st="cd $XDG_STATE_HOME"
+alias zd="cd $ZDOTDIR"
+alias dt="cd $DOTDIR"
+
+# misc
+alias check-size="du -h | sort -h"
+alias count="wc -l ./* 2>/dev/null | tail -n 1 | awk '{print $1}'"
+alias countall="wc -l ./* 2>/dev/null | sort -rn"
+alias memcheck="valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all"
+alias gitdo="git add . && git commit && git push"
+alias weather='curl wttr.in'
+alias printenv="printenv | sort -bt= -k1,1"
+alias vstart='sudo virsh net-start default'
+alias nemo='(&>/dev/null nemo . &)'
+
+# system
+alias sdn="shutdown now"
+alias sus="systemctl suspend"
+alias aslr_disable="echo 0 | sudo tee /proc/sys/kernel/randomize_va_space"
+alias aslr_enable="echo 2 | sudo tee /proc/sys/kernel/randomize_va_space"
+alias aslr="cat /proc/sys/kernel/randomize_va_space"
+
+# color
+alias grep='grep --colour=auto'
+alias egrep='egrep --colour=auto'
+alias fgrep='fgrep --colour=auto'
+alias ct="$DOTDIR/zsh/color_test.zsh"
+
+# git
+alias gsb='git status'
+
